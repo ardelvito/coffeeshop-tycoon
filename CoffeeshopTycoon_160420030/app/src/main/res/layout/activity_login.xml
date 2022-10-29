@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="-103dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="281dp"
+            android:layout_height="231dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/login_coffee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logincoffee" />
+
+        <TextView
+            android:id="@+id/txtCoffeeShop"
+            android:layout_width="223dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/worksansbold"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="223dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#2d3c5c"
+
+            android:fontFamily="@font/merriweatherblack"
+            android:text="@string/btn_login"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+
+
+            />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints="username"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_account_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/txtusername"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#455A64"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCoffeeShop" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/txtpassword"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#455A64"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

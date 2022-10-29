@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverActivity">
+
+    <TextView
+        android:id="@+id/txtGameOver"
+        android:layout_width="306dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/worksansbold"
+        android:gravity="center"
+        android:text="Oops, game over!"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartDay"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#2d3c5c"
+        android:fontFamily="@font/merriweatherblack"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayAgain" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#2d3c5c"
+        android:fontFamily="@font/merriweatherblack"
+        android:text="Play Again"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="307dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameOver"
+        app:srcCompat="@drawable/pig" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

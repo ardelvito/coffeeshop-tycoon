@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="375dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B3CFFF">
+
+            <Button
+                android:id="@+id/btnStartNewDay"
+                android:layout_width="223dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="@color/main_color"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Start New Day"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/txtProfitResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Rp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.835"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Profit"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="171dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Location Rent and Ingredient Cost"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Expenses"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPricePerCupResult" />
+
+            <TextView
+                android:id="@+id/txtCupCoffeeResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="cup of coffee"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Revenues"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPricePerCupResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Rp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCupCoffeeResult" />
+
+            <TextView
+                android:id="@+id/txtIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Rp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toEndOf="@+id/txtCupCoffeeResult"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/txtCapitalResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Rp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.687"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtDayResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/worksansbold"
+        android:text="Day -"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

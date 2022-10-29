@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CoffeeshopTycoon_160420030</string>
+    <string name="title">Coffee Shop Tycoon</string>
+    <string name="login_coffee"></string>
+    <string name="btn_login">Login</string>
+    <string name="txtusername">Username</string>
+    <string name="txtpassword">Password</string>
+    <string name="btnpassword">Password</string>
+
+
+</resources>

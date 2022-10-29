@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    tools:context=".PreparationActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="830dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWeatherSimulation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#B3CFFF">
+
+                    <EditText
+                        android:id="@+id/txtTotalMilk"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/custom_input_preparation"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toTopOf="@+id/btnSubtractMilk"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnAddMilk"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+                    <Button
+                        android:id="@+id/btnSubtractMilk"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="32dp"
+                        android:backgroundTint="#2d3c5c"
+                        android:paddingTop="7dp"
+                        android:rotation="270"
+                        android:text="I"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTotalMilk"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnAddMilk"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="50dp"
+                        android:backgroundTint="#2d3c5c"
+                        android:paddingTop="7dp"
+                        android:rotation="270"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toTopOf="@+id/txtTotalMilk"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                    <EditText
+                        android:id="@+id/txtTotalWater"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/custom_input_preparation"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toTopOf="@+id/btnSubtractMilk"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnAddMilk"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/btnAddWater"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#2d3c5c"
+                        android:paddingTop="7dp"
+                        android:rotation="270"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toTopOf="@+id/txtTotalMilk"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/txtTotalCoffee"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/custom_input_preparation"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toTopOf="@+id/btnSubtractCoffee"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnAddCoffee"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/btnAddCoffee"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="50dp"
+                        android:backgroundTint="#2d3c5c"
+                        android:paddingTop="7dp"
+                        android:rotation="270"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toTopOf="@+id/txtTotalCoffee"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnSubtractCoffee"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:backgroundTint="#2d3c5c"
+                        android:paddingTop="7dp"
+                        android:rotation="90"
+                        android:text="I"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTotalCoffee"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnSubtractWater"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="#2d3c5c"
+                        android:paddingTop="7dp"
+                        android:rotation="90"
+                        android:text="I"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTotalWater"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Milk"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Coffee"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="32dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Water"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtPricePerCup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Cost per cup coffee is"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSubtractCoffee" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="How many cup do you want to sell ?"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPricePerCup" />
+
+                    <EditText
+                        android:id="@+id/txtSell"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <EditText
+                        android:id="@+id/txtSellingPrice"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Selling Price"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSell" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Locations"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSellingPrice" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Total Costs"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.475"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                    <TextView
+                        android:id="@+id/txtCupOfCoffee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="0 cup of coffee"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.119"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                    <TextView
+                        android:id="@+id/txtCapitalPerCoffee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="-"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtCupOfCoffee" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Location Rent"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.132"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtCapitalPerCoffee" />
+
+                    <TextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="-"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.117"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                    <TextView
+                        android:id="@+id/txtCapitalCoffee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="0"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.839"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                    <TextView
+                        android:id="@+id/txtRentPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="0"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.839"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtCapitalPerCoffee" />
+
+                    <TextView
+                        android:id="@+id/txtGrandTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="0"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.839"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@drawable/vertical_line"
+                        app:layout_constraintBottom_toTopOf="@+id/textView6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSellingPrice" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="39dp"
+                        android:background="@drawable/vertical_line"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spinnerLocations" />
+
+                    <Spinner
+                        android:id="@+id/spinnerLocations"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:minHeight="48dp"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="87dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweatherblack"
+                        android:text="Total"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.109"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnStartDay"
+                android:layout_width="223dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#2d3c5c"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Start Day"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txtPlayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/worksansbold"
+                android:text="Welcome"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.109"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDayResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:fontFamily="@font/worksansbold"
+                android:text="Day -"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Balance:"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.102"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtWeatherSimulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="136dp"
+                android:fontFamily="@font/merriweatherblack"
+                android:text="Weather"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
